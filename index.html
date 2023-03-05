@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Static/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!--Nav start  -->
+ <nav class="navbar navbar-expand-lg sticky-top" style="background-color: white;">
+  <div class="container-fluid">
+    <a class="navbar-brand nav-heading" href="#"><img src="static/Image/Icon.jpg" width="55" height="45" alt=""> Bag Bag</a>
+    <button class="navbar-toggler" style="border: 0px;" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  style="fill: rgba(0, 0, 0, 1); transform: ;msFilter:; " ><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"><a class="navbar-brand nav-heading" href="#"><img src="static/Image/Icon.jpg" width="55" height="45" alt=""> Bag Bag</a></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="index.html"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="about.html">About Us</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle nav-li" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Bag
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item nav-li" href="#">Men</a></li>
+              <li><a class="dropdown-item nav-li" href="#">Women</a></li>
+              <li><a class="dropdown-item nav-li" href="#">Children</a></li>
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <div class="bg-light" style="width: fit-content; height: fit-content; padding: 5px; ">
+        <form class="d-flex"  role="search">
+          <input class="form-control me-2 bg-light" style="border: 0px !important;"  type="search" placeholder="Search Our Catelog" aria-label="Search">
+          <i class="fa fa-search" aria-hidden="true" style="font-size: 20px; margin: auto;"></i>
+        </form>
+      </div>
+      <li>
+        <div style="position: relative;">
+      <i class="fa fa-cart-arrow-down " id="cart-icon" style="font-size: 25px; margin-left: 5px; margin-top: 10px;" aria-hidden="true"></i> 
+      <button type="button" class="btn btn-primary cart-circle" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="position: absolute; top:5%;left: 60%;  border-radius: 50%; width: fit-content; height: fit-content; background-color: goldenrod; padding: 0px 5px;">
+      0
+      </button>
+    </div>
+    </li>
+
+
+      </div>
+
+
+     
+  </div>
+  </div>
+  <div>
+  </div>
+
+ 
+
+</nav>
+<!-- Nav end -->
+
+
+
+<!-- Modal -->
+<div class="modal fade select  modal-dialog-scrollable" style="height: 500px;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 cart-heading" id="staticBackdropLabel ">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body gy-3">
+        <!-- contained start-->
+        <div class="contained">
+          <div class="row ">
+            <div class="box-contained col-6">
+              <div class="boxed-contained">
+                <img src="static/Image/colorbeads.jpg" alt="" style="width: 100%; height: 200px;">
+              </div>
+            </div>
+            <div class="box-contained col-6">
+              <div class="boxed-contained">
+              <h5>Zip Closure handbag</h5>
+              <p>$55.0</p>
+              <p><i class="fa fa-trash fs-4 delete-btn" aria-hidden="true" style="color: goldenrod;"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- contained end-->
+        <!-- contained start-->
+        <div class="contained mt-2">
+          <div class="row">
+            <div class="box-contained col-6">
+              <div class="boxed-contained">
+                <img src="static/Image/colorbeads.jpg" alt="" style="width: 100%; height: 200px;">
+              </div>
+            </div>
+            <div class="box-contained col-6">
+              <div class="boxed-contained">
+              <h5>Zip Closure handbag</h5>
+              <p>$55.0</p>
+              <p><i class="fa fa-trash fs-4 delete-btn" aria-hidden="true" style="color: goldenrod;"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- contained end-->
+        <!-- contained start-->
+        <div class="contained mt-2">
+          <div class="row">
+            <div class="box-contained col-6">
+              <div class="boxed-contained">
+                <img src="static/Image/colorbeads.jpg" alt="" style="width: 100%; height: 200px;">
+              </div>
+            </div>
+            <div class="box-contained col-6">
+              <div class="boxed-contained">
+              <h5>Zip Closure handbag</h5>
+              <p>$55.0</p>
+              <p><i class="fa fa-trash fs-4 delete-btn" aria-hidden="true" style="color: goldenrod;"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- contained end-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" style="margin: auto; background-color: goldenrod;">Buy Now</button>
+       
+      </div>
+    </div>
+  </div>
+</div>       <!-- CAROUSEL START -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            
+            <img src="Static/Image/bag1.png" class="d-block w-100  " alt="...">
+            <div  class="img-text"><h1 class="carousel-header"  data-aos="fade-up" data-aos-delay="4000"> Get up to 50% flat off on this sale</h1>
+              <div class="btn-shop" style="width: fit-content; margin-top: 30px !important; height: fit-content; margin: auto; padding: 10px 15px; border: 2px solid white; color: white ;">  <a href=""  style="color: white; ">  SHOP NOW</a></div>
+          </div>
+ 
+          </div>
+          <div class="carousel-item ">
+            <img src="Static/Image/bag2.png" class="d-block w-100 " alt="...">
+            <div class="img-text"><h1 class="carousel-header"  data-aos="fade-up" data-aos-delay="4000"> A Synonym of Yourself</h1>
+              <div class="btn-shop" style="width: fit-content; margin-top: 30px !important; height: fit-content; margin: auto; padding: 10px 15px; border: 2px solid white; color: white ;">  <a href=""  style="color: white; ">  SHOP NOW</a></div>
+               </div>
+          </div>
+      
+          <div class="carousel-item">
+            <img src="Static/Image/bag3.png" class="d-block w-100 " alt="...">
+            <div class="img-text"><h1 class="carousel-header" data-aos="fade-right" data-aos-delay="4000"> Personal Handbag</h1>
+              <div class="btn-shop" style="width: fit-content; margin-top: 30px !important; height: fit-content; margin: auto; padding: 10px 15px; border: 2px solid white; color: white ;">  <a href=""  style="color: white; ">  SHOP NOW</a></div>
+               </div>
+          </div>
+          </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <!-- CAROUSEL END -->
+    
+     <div class="contained"> <hr style="color: black;"> </div>
+
+     <h1 class="mt-4" style="text-align: center; font-size: 28px;">NEW ARRIVAL</h1>
+
+  <!-- Contained1 start -->
+  <div class="contained mt-4 px-4" >
+    <div class="row g-5">
+      <div class="box col-lg-3 col-md-6  col-sm-6 col-md-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+        <img src="Static/Image/greenbag.jpg" width="100%" height="100%"  style="object-fit: cover; object-position: center;" alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Zip Closure handbag <br>$55.0  </b> </p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+          ADD TO CART
+        </div> 
+        
+        </div>
+        </div>
+      </div>
+      <div class="box col-lg-3 col-md-6 col-sm-6 col-md-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+          <img src="Static/Image/pinkbag.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p><b> Pink Mammon handbag <br>$70.0 </b></p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+          ADD TO CART
+        </div> 
+
+        </div>
+        </div>
+      </div>
+      <div class="box col-lg-3 col-md-6 col-sm-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+          <img src="Static/Image/silverspace.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Silver space handbag <br>$120.0 </b></p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;">
+         ADD TO CART 
+        </div> 
+        </div>
+        </div>
+      </div>
+      <div class="box col-lg-3 col-md-6 col-sm-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+          <img src="Static/Image/colorbeads.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Color Beads Travel Bag <br>$90.0 </b></p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+          ADD TO CART
+        </div> 
+        </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- Contained1 end -->
+
+
+
+
+<!-- Contained2 start -->
+<div class="contained  mt-4 px-4" >
+<div class="row g-5">
+  <div class="box  col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+    <img src="Static/Image/creamplaid.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;" alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p><b> Cream Plaid Wristlet<br>$70.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+      ADD TO CART
+    </div> 
+    
+    </div>
+    </div>
+  </div>
+  <div class="box col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+      <img src="Static/Image/woodplait.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p><b> Wood Plait Wristlet <br>$70.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+      ADD TO CART
+    </div> 
+
+    </div>
+    </div>
+  </div>
+  <div class="box col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+      <img src="Static/Image/blackplait.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p><b> Black Plait Wristlet <br>$75.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;">
+     ADD TO CART 
+    </div> 
+    </div>
+    </div>
+  </div>
+  <div class="box col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+      <img src="Static/Image/naturemotif.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Nature Motif Wristlet <br>$65.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+      ADD TO CART
+    </div> 
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+   <!-- Contained2 end -->
+
+<!-- View Gallery start -->
+
+<div class="view-btn mt-4" style="width: fit-content; height: fit-content; margin: auto; padding: 10px; background-color: goldenrod;">
+  <a href="products.html" style="color: white; font-size: 15px;"> View All Products</a>
+</div>
+<!-- View Gallery end -->
+
+
+     <!-- categories start -->
+     <div class=" categories" style="height: fit-content; width: 100%;  background-color: rgb(201, 238, 240); margin-top: 80px; margin-bottom: 100px; padding: 50px 0px; text-align: center;">
+     <div style="margin: auto ; margin-bottom: 20px; width: fit-content; padding: 5px 10px; height: fit-content; border: 2px solid black;">Featured</div>
+     <h1>Popular Categories</h1> 
+     <p>Our popular categories include backpacks, tote bags, messenger bags, duffel bags, and luggage, all designed with durability and functionality in mind.</p>
+
+     <div class="contained">
+      <div class="row gy-5">
+      <div class="product-box col-lg-4">
+        <div class="product-boxed " style="height: 300px;position: relative;">
+        <img  data-aos="flip-left" data-aos-delay="300" src="Static/Image/handbag.jpg" style="object-fit: cover; object-position: center;" width="100%" height="100%" alt="">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%);"><p style="color: white;"> Handbag</p>
+          <div class="product-boxed-btn" > 
+       <a href="products1.html" style="color: white;"> VIEW PRODUCTS </a>
+          </div> 
+        </div>
+      </div>
+      </div>
+      <div class="product-box col-lg-4">
+        <div class="product-boxed " style="height: 300px; position: relative;">
+          <img data-aos="fade-up" data-aos-delay="300" src="Static/Image/bagpack2.jpg" style="object-fit: cover; object-position: center;" width="100%" height="100%" alt="">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%);"><p style="color: white;"> Backpack</p>
+            <div class="product-boxed-btn"  > 
+    <a href="products2.html" style="color: white;">  VIEW PRODUCTS </a>
+            </div> 
+          </div>  
+        </div>
+      </div>
+      <div class="product-box col-lg-4">
+        <div class="product-boxed " style="height: 300px; position: relative;">
+          <img data-aos="fade-right" data-aos-delay="300" src="Static/Image/suitcase.jpg" style="object-fit: cover; object-position: center;" width="100%" height="100%" alt="">
+         <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%);"><p style="color: white;"> Suitcase</p>
+          <div class="product-boxed-btn" > 
+<a href="products3.html" style="color: white;"> VIEW PRODUCTS</a>
+          </div> 
+        </div>   
+        
+        </div>
+      </div>
+     </div>
+    </div>
+     </div>
+      <!-- Categories end -->
+
+
+
+
+
+
+
+
+
+
+       <!-- Quotes Start -->
+       <div class="contained mt-5">
+        <div class="row gy-3">
+        <div class="box-quote col-lg-4">
+          <div class="boxed-quote" style="height: fit-content;">
+          <img    data-aos="zoom-in-right" src="static/Image/quote1.jpg" height="600px" width="100%" style="object-fit: cover; object-position: center;" alt="">
+          </div>
+        </div>
+        <div class="box-quote col-lg-4">
+          <div class="boxed-quote" style="height: fit-content; position: relative;">
+          <img data-aos="slide-up" src="static/Image/quote2.jpg" height="600px" width="100%" style="object-fit: cover; object-position: center;" alt="">
+          <div style="position: absolute; top: 50%; left: 50%; color: white; transform: translateX(-50%); text-align: center; font-size: 17px;"><p >"Just get a bag and drop a dream in it, and you'll be surprised what happens."</p><p>~ Charles Nelson Reilly ~</p></div>
+          </div>
+        </div>
+        <div class="box-quote col-lg-4">
+          <div class="boxed-quote" style="height: fit-content;">
+          <img data-aos="zoom-in-left" src="static/Image/quote3.jpg" height="600px" width="100%" style="object-fit: cover; object-position: center;" alt="">
+          </div>
+        </div>
+       </div>
+      </div>
+       <!-- Quotes End -->
+
+
+
+       <!-- Section start -->
+       <section class="counts  pt-4" style="height: 50vh; margin-top: 60px; color: white; position: relative; text-align: center;">
+       <div style="position: absolute;  left: 50%; transform: translateX(-50%);"><h1 class="counts-heading">Designed for your uniqueness</h1>
+      <p class="counts-paragraph">Our bags are designed to reflect your individuality and style, with features such as customizable straps, color options, and unique designs that allow you to express yourself and stand out from the crowd.</p>
+      <div class="discover-more-btn" style="width: fit-content; margin: auto; height: fit-content; padding: 10px; background-color: goldenrod;">Discover More</div>
+      </div>
+
+     </section>
+
+     <!-- Section end -->
+
+
+
+     <!-- Choose-contained start -->
+     <div class="contained Choose-contained mt-5" style="height: fit-content;">
+      <div class="row">
+      <div class="box-contained box-choose-contained1 col-lg-6">
+        <div class="boxed-contained" >
+          <!-- btn start  -->
+          <div class="chooose-btn" style="width: fit-content; height: fit-content; padding: 10px;  border: 1px solid goldenrod;"><i>Why Choose Us</i>
+          </div>
+          <!-- btn end -->
+          <h1 class="choose-heading" style="font-size: 40px;">Choose perfection as perfect as you are</h1>
+     
+          <p class="choose-paragraph" style="font-size: 14px;">     At our bag website, we believe that you deserve the perfect bag that matches your unique personality and needs, which is why we offer a wide selection of high-quality bags in various styles, colors, and sizes.</p>
+
+          <div class="discover-btn" style="background-color: goldenrod; width: fit-content; height: fit-content; padding:  8px; color: white;">DISCOVER MORE</div>
+        </div>
+      </div>
+      <div class="box-contained col-lg-6">
+        <div class="boxed-contained" >
+          <!--  -->
+          <div  class="product-container product-font">
+          <h1 data-aos="fade-left " data-aos-delay="200" style="font-size: 20px;"><i class="fa fa-check-square " aria-hidden="true" style="color: goldenrod;"></i> Premium Product</h1> <p style="font-size: 14px;" data-aos="fade-left" data-aos-delay="200">Our bags are crafted from the highest quality materials and feature superior craftsmanship, ensuring that you receive a premium product that is durable, functional, and stylish.</p>
+        </div>
+        <!--  -->
+          <div  class="product-container product-font">
+          <h1 data-aos="fade-left choose-paragraph" data-aos-delay="200" style="font-size: 20px;"><i class="fa fa-check-square" aria-hidden="true" style="color: goldenrod;"></i> Safety Packaging</h1> <p style="font-size: 14px;" data-aos="fade-left" data-aos-delay="200">We take the safety of your new bag seriously, which is why we carefully package each product to ensure that it arrives in perfect condition, ready to be enjoyed for years to come..</p>
+        </div>
+        <!--  -->
+          <div  class="product-container product-font">
+          <h1 data-aos="fade-left choose-paragraph" data-aos-delay="200" style="font-size: 20px;"><i class="fa fa-check-square" aria-hidden="true" style="color: goldenrod;"></i> 100% Warranty Product</h1> <p style="font-size: 14px;"  data-aos="fade-left" data-aos-delay="200">We stand behind the quality of our products and offer a 100% warranty, so you can shop with confidence knowing that we'll make it right if there are any issues with your bag.</p>
+        </div>
+        <!--  -->
+          <div  class="product-container product-font">
+          <h1 data-aos="fade-left choose-paragraph" data-aos-delay="200" style="font-size: 20px;"><i class="fa fa-check-square" aria-hidden="true" style="color: goldenrod;"></i> 24/7 Support</h1> <p style="font-size: 14px;" data-aos="fade-left" data-aos-delay="200">Our dedicated customer support team is available 24/7 to answer any questions you may have about our products, shipping, returns, or anything else, ensuring that you receive the best possible shopping experience.</p>
+        </div>
+        <!--  -->
+        </div>
+      </div>
+     </div>
+    </div>
+     <!-- Choose-contained end -->
+
+<!-- Contained-hr start -->
+     <div class="contained choose-hr">
+      <hr style="color: black;">
+     </div>
+     <!-- Contained-hr end -->
+     <!-- Contained start -->
+     <div class="contained Testimonials-container" style="margin-top: 50px; text-align: center;">
+     <div style="margin: auto;  border: 2px solid goldenrod; padding: 8px 10px; width: fit-content; height: fit-content;"><i> Testimonials</i></div>
+     <h1>Our Customers speak for us</h1>
+     
+     
+      <div class="row mt-5">
+         <!-- boxed-contained start1  -->
+        <div class="box-contained col-lg-4">
+         
+          <div class="boxed-contained star-rating" style="height: fit-content; border: 2px solid black; text-align: left; padding: 20px;">
+            <!-- star1 -->
+            <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i> 
+              <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+
+              <p style="font-size: 20px;"> <b> Matthew Austin, </b>
+          <span style="color: gray;"> Backpacker </span>
+          </p>
+
+<p class="customer-speech" style="font-size: 16px;">Your bags are a game-changer for backpackers like me, with their durable materials, comfortable design, and ample storage space making them the perfect companion for any adventure.</p>
+
+<p style="margin-top: 50px;"><b> 05/03/2023</b></p>
+          </div>
+            
+        </div>
+        <!-- boxed-contained end1  -->
+          <!-- boxed-contained start2  -->
+        <div class="box-contained col-lg-4">
+         
+          <div class="boxed-contained star-rating" style="height: fit-content; border: 2px solid black; text-align: left; padding: 20px;">
+            <!-- star1 -->
+            <i class="fa fa-star"  style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i> 
+              <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star-half-o" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+
+              <p style="font-size: 20px;"> <b> Jack I. Ramirez, </b>
+          <span style="color: gray;"> Photographer </span>
+          </p>
+
+<p class="customer-speech" style="font-size: 16px;">As a photographer who travels frequently, I couldn't be happier with the quality and functionality of your bags, which provide ample space for my equipment while remaining comfortable and stylish</p>
+
+<p style="margin-top: 50px;"><b> 05/03/2023</b></p>
+          </div>
+            
+        </div>
+        <!-- boxed-contained end2  -->
+        <!-- boxed-contained start3  -->
+        <div class="box-contained col-lg-4">
+         
+          <div class="boxed-contained star-rating" style="height: fit-content; border: 2px solid black; text-align: left; padding: 20px;">
+            <!-- star1 -->
+            <i  class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i> 
+              <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+                <!-- star1 -->
+              <i class="fa fa-star" style="font-size: 20px; color: goldenrod;" aria-hidden="true"></i>
+
+              <p style="font-size: 20px;"> <b> Tina Rodriguez, </b>
+          <span style="color: gray;"> 
+            Model </span>
+          </p>
+
+<p class="customer-speech" style="font-size: 16px;">As a fashion model, I need a bag that's not only stylish but also practical, and your bags deliver on both fronts with their sleek and modern designs and functional features. I recommend these bags for people.</p>
+
+<p
+ style="margin-top: 50px;"><b> 05/03/2023</b></p>
+          </div>
+            
+        </div>
+        <!-- boxed-contained end3  -->
+      </div>
+     </div>
+    </div>
+     <!-- Contained end -->
+
+     <!--  -->
+
+     <div style="background-color: rgb(201, 238, 240); margin-top: 50px; width: 100%; height: fit-content">
+    <div class="contained bg-light" style=" height: fit-content; ">
+    <h1 style="text-align: center; font-size: 25px;">LATEST ARTICLE</h1>
+    <div class="contained">
+      <hr style="color: black;">
+      
+        <div class="row">
+          <div class="box-contained col-lg-6">
+            <div class="boxed-contained bag-article1 " style="height: 400px;">
+            <img src="static/Image/article1.jpg" width="100%" height="400px" style="object-fit: cover; object-position: center;" alt="">
+         <a href="article1.html">   <h2 class="article-heading" style="color: black;">Top 10 Bags Adding Colour To Your Wardrobe</h2> </a>
+            <p style="color: grey; font-size: 13px;">March 5, 2023  No Comments</p>
+            </div>
+          </div>
+          <div class="box-contained  col-lg-6">
+            <div class="boxed-contained " style="height: 480px;">
+            <div class="bag-article " style="height: 120px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between;">
+            <div style="width: 30%;"><img src="static/Image/article2.jpg" width="100%" height="120px" style="object-fit: cover; object-position: center;"  alt=""></div>
+            <div style="width: 68%;"> <a href=""> <h3 class="article-heading" style="color: black;">What does it take to make it as a successful bag reseller </h3 > </a>
+            <p style="color: gray; font-size: 13px;">March 5, 2023  No Comments</p>
+            </div>
+            </div>
+            </div>
+            <div class=" bag-article" style="height: 120px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between;">
+            <div style="width: 30%;"><img src="static/Image/article3.jpg" width="100%" height="120px" style="object-fit: cover; object-position: center;"  alt=""></div>
+            <div style="width: 68%;">  <a href=""> <h3 class="article-heading" style="color: black;">New Spring Body Styles </h3 > </a>
+            <p style="color: gray; font-size: 13px;">March 5, 2023  No Comments</p>
+            </div>
+            </div>
+            </div>
+            <div class="bag-article " style="height: 120px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between;">
+            <div style="width: 30%;"><img src="static/Image/review.jpg" width="100%" height="120px" style="object-fit: cover; object-position: center;"  alt=""></div>
+            <div style="width: 68%;"> <a href=""> <h3 class="article-heading" style="color: black;">Pairing Your Wallets With Your Handbag </h3 > </a>
+            <p style="color: gray; font-size: 13px;">March 5, 2023  No Comments</p>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+<!--  -->
+
+
+
+<!-- Footer -->
+<footer class="bg-dark  text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+  <a href="https://web.facebook.com/shalom.oluwafemi.92"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-facebook fa-stack-1x " style="color: white; "></i>
+    </a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/OluwafemiShalo1"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+    </a>
+
+    
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/shalomoluwafemi/">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+          <i class="fa fa-instagram fa-stack-1x" style="color: white;"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/shalom-oluwafemi-273317251/"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-linkedin fa-stack-1x" style="color: white;"></i>
+    </a>
+
+      <!-- Github -->
+      <a href="https://github.com/shalom-geek-ng">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+          <i class="fa fa-github fa-stack-1x" style="color: white;"></i>
+        </a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+  
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">
+            <i class="fas fa-gem me-3 ">
+
+            </i>Bag Bag
+          </h6>
+          <p style="text-align: justify;">Thank you for visiting our bag website! We hope you found the perfect bag to meet your needs. At Bag Bag, we are committed to providing our customers with high-quality products and exceptional customer service.</p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+            Useful Links
+           </h6>
+           
+             <p><a data-i18n class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+ 
+           </p>
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-white" href="about.html">About Us</a>
+           </p>
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-white" href="gallery.html">Gallery</a>
+           </p>
+           
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-white" href="contact.html">Contact</a>
+           </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+          Products
+          </h6>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Pricing</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Settings</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Orders</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Help</a>
+          </p>
+        </div>
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">Contact</h6>
+          <p >  </p>
+          <p class="text-white">
+           
+            oluwafemishalom3@gmail.com
+          </p>
+          <p class="text-white"> +234 81 666 498 97</p>
+          <p class="text-white">+234 81 666 498 97</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  Copyright © 2022 Bagage,
+    <a class="text-white" href="https://mdbootstrap.com/"> All rights reserved. Presented by <span style="color: goldenrod;"> Oluwafemi Shalom </span></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="Static/Js/script.js"></script>
+    <script src="Static/Js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

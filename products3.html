@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="Static/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">
+
+ <!--Nav start  -->
+ <nav class="navbar navbar-expand-lg sticky-top" style="background-color: white;">
+  <div class="container-fluid">
+    <a class="navbar-brand nav-heading" href="#"><img src="static/Image/Icon.jpg" width="55" height="45" alt=""> Bag Bag</a>
+    <button class="navbar-toggler" style="border: 0px;" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  style="fill: rgba(0, 0, 0, 1); transform: ;msFilter:; " ><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"><a class="navbar-brand nav-heading" href="#"><img src="static/Image/Icon.jpg" width="55" height="45" alt=""> Bag Bag</a></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="index.html"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="about.html">About Us</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle nav-li" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Bag
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item nav-li" href="#">Action</a></li>
+              <li><a class="dropdown-item nav-li" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider nav-li"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-li" aria-current="page" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <div class="bg-light" style="width: fit-content; height: fit-content; padding: 5px; ">
+        <form class="d-flex"  role="search">
+          <input class="form-control me-2 bg-light" style="border: 0px !important;"  type="search" placeholder="Search Our Catelog" aria-label="Search">
+          <i class="fa fa-search" aria-hidden="true" style="font-size: 20px; margin: auto;"></i>
+        </form>
+      </div>
+      <li>
+        <div style="position: relative;">
+      <i class="fa fa-cart-arrow-down " id="cart-icon" style="font-size: 25px; margin-left: 5px; margin-top: 10px;" aria-hidden="true"></i> 
+      <button type="button" class="btn btn-primary cart-circle" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="position: absolute; top:5%;left: 60%;  border-radius: 50%; width: fit-content; height: fit-content; background-color: goldenrod; padding: 0px 5px;">
+      0
+      </button>
+    </div>
+    </li>
+
+
+      </div>
+
+
+     
+  </div>
+  </div>
+  <div>
+  </div>
+
+ 
+
+</nav>
+<!-- Nav end -->
+
+
+  <!-- Contained1 start -->
+  <div class="contained mt-4 px-4" >
+    <div class="row g-5">
+      <div class="box col-lg-3 col-md-6  col-sm-6 col-md-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+        <img src="Static/Image/suitcase.jpg" width="100%" height="100%"  alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Zip Closure handbag <br>$55.0  </b> </p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+          ADD TO CART
+        </div> 
+        
+        </div>
+        </div>
+      </div>
+      <div class="box col-lg-3 col-md-6 col-sm-6 col-md-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+          <img src="Static/Image/suitcase1.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p><b> Pink Mammon handbag <br>$70.0 </b></p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+          ADD TO CART
+        </div> 
+
+        </div>
+        </div>
+      </div>
+      <div class="box col-lg-3 col-md-6 col-sm-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+          <img src="Static/Image/suitcase2.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Silver space handbag <br>$120.0 </b></p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;">
+         ADD TO CART 
+        </div> 
+        </div>
+        </div>
+      </div>
+      <div class="box col-lg-3 col-md-6 col-sm-6">
+        <div class="boxed " style="height: 500px;">
+        <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+           <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+            sale!
+  <span class="visually-hidden">New alerts</span>
+</span>
+          <img src="Static/Image/suitcase3.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;" alt="">
+        </div>
+        <div class="boxed-bottom" style="height: 150px;">
+        <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Color Beads Travel Bag <br>$90.0 </b></p></div>
+        <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+          ADD TO CART
+        </div> 
+        </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- Contained1 end -->
+
+
+
+
+<!-- Contained2 start -->
+<div class="contained  mt-4 px-4" >
+<div class="row g-5">
+  <div class="box  col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+    <img src="Static/Image/suitcase4.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p><b> Cream Plaid Wristlet<br>$70.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+      ADD TO CART
+    </div> 
+    
+    </div>
+    </div>
+  </div>
+  <div class="box col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+      <img src="Static/Image/suitcase5.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p><b> Wood Plait Wristlet <br>$70.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+      ADD TO CART
+    </div> 
+
+    </div>
+    </div>
+  </div>
+  <div class="box col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+      <img src="Static/Image/suitcase6.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"  alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p><b> Black Plait Wristlet <br>$75.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;">
+     ADD TO CART 
+    </div> 
+    </div>
+    </div>
+  </div>
+  <div class="box col-lg-3 col-md-6 col-sm-6">
+    <div class="boxed " style="height: 500px;">
+    <div class="boxed-top bg-light btn  position-relative" style="height: 350px;">
+       <span class="position-absolute top-0 start-100 translate-middle p-2 bg-goldenrod border border-light rounded-circle">
+        sale!
+<span class="visually-hidden">New alerts</span>
+</span>
+      <img src="Static/Image/suitcase7.jpg" width="100%" height="100%" style="object-fit: cover; object-position: center;"   alt="">
+    </div>
+    <div class="boxed-bottom" style="height: 150px;">
+    <div class="boxed-bottom-text" style="text-align: center;"><p> <b> Nature Motif Wristlet <br>$65.0 </b></p></div>
+    <div class="boxed-bottom-btn" style="font-size: 13px;"> 
+      ADD TO CART
+    </div> 
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+   <!-- Contained2 end -->
+
+
+   <!-- Footer -->
+<footer class="bg-dark  text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+  <a href="https://web.facebook.com/shalom.oluwafemi.92"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-facebook fa-stack-1x " style="color: white; "></i>
+    </a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/OluwafemiShalo1"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+    </a>
+
+    
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/shalomoluwafemi/">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+          <i class="fa fa-instagram fa-stack-1x" style="color: white;"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/shalom-oluwafemi-273317251/"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-linkedin fa-stack-1x" style="color: white;"></i>
+    </a>
+
+      <!-- Github -->
+      <a href="https://github.com/shalom-geek-ng">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+          <i class="fa fa-github fa-stack-1x" style="color: white;"></i>
+        </a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+  
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">
+            <i class="fas fa-gem me-3 ">
+
+            </i>Bag Bag
+          </h6>
+          <p style="text-align: justify;">Thank you for visiting our bag website! We hope you found the perfect bag to meet your needs. At Bag Bag, we are committed to providing our customers with high-quality products and exceptional customer service.</p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+            Useful Links
+           </h6>
+           
+             <p><a data-i18n class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+ 
+           </p>
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-white" href="about.html">About Us</a>
+           </p>
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-white" href="gallery.html">Gallery</a>
+           </p>
+           
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-white" href="contact.html">Contact</a>
+           </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+          Products
+          </h6>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Pricing</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Settings</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Orders</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Help</a>
+          </p>
+        </div>
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">Contact</h6>
+          <p >  </p>
+          <p class="text-white">
+           
+            oluwafemishalom3@gmail.com
+          </p>
+          <p class="text-white"> +234 81 666 498 97</p>
+          <p class="text-white">+234 81 666 498 97</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  Copyright © 2022 Bagage,
+    <a class="text-white" href="https://mdbootstrap.com/"> All rights reserved. Presented by <span style="color: goldenrod;"> Oluwafemi Shalom </span></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="Static/Js/script.js"></script>
+<script src="Static/Js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

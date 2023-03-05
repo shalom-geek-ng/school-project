@@ -1,0 +1,258 @@
+* {
+    text-decoration: none !important;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box !important;
+}
+.carousel-header{
+ font-family: var(--carouselheader);
+ font-size: 55px !important;
+}
+:root {
+    --navFont: 'PT Serif', serif;
+    --carouselheader: 'Lato', sans-serif;
+    --nav-heading: 'Tilt Neon', cursive;
+    --nav-li: 'Golos Text', sans-serif;
+
+}
+.contained {
+    width: 90%;
+    margin: auto;
+}
+nav{
+   box-shadow: 1px 3px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 12px 0px rgba(0,0,0,0.75);
+}
+/* Nav-heading */
+.nav-heading{
+   font-family: var(--nav-heading); 
+   font-size: 23px;
+}
+/* nav-li */
+.nav-li{
+    font-family: var(--nav-li);
+    font-size: 14px;
+}
+li {
+    padding: 0px 20px !important;
+}
+.cart-heading.zero::before{
+    opacity: 1;
+}
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 90vh;
+    overflow: hidden;
+
+
+}
+
+.img-text {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    transform: translateX(-50%);
+    top: 30%;
+    left: 50%;
+    color: #ffffff;
+
+}
+
+.img-text h1 {
+    font-size: 80px;
+
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.btn-shop:hover {
+    background-color: goldenrod !important;
+    border: none !important;
+}
+
+.box{
+    transition: .3s;
+}
+
+.box:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);    
+    cursor: pointer;
+    transition: .3s;
+  
+}
+
+.boxed-bottom-btn {
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid goldenrod;
+    padding: 10px;
+    margin: auto !important;
+}
+
+.boxed-bottom-btn:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.bg-goldenrod {
+    background-color: goldenrod !important;
+}
+
+
+
+.boxed-contained-btn {
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid goldenrod;
+    padding: 10px;
+}
+
+.product-boxed-btn {
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+}
+.counts{
+    background-image: url(../Image/counts-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+  
+  .counts img{
+     filter: grayscale(1);
+     transition: .3s;
+     height: 200px;
+     width: 100%;
+  }
+.product-boxed-btn:hover {
+    background-color: goldenrod;
+    color: black;
+    border: 0;
+}
+.article-heading{
+    font-size: 18px;
+}
+.vision-icon:hover{
+    color: goldenrod;
+}
+.user-container{
+    box-shadow: 14px 9px 31px -1px rgba(0,0,0,0.16);
+-webkit-box-shadow: 14px 9px 31px -1px rgba(0,0,0,0.16);
+-moz-box-shadow: 14px 9px 31px -1px rgba(0,0,0,0.16);
+}
+
+@media only screen and (max-width:576px) {
+ .carousel-header{
+    font-size: 30px !important;
+ }
+ .boxed-bottom-btn {
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid goldenrod;
+    padding: 10px;
+    margin: auto !important;
+}  
+.categories{
+    margin-bottom: 0px !important;
+}
+
+.boxed-contained-bottom{
+ margin-top: 100px !important;
+ display: block !important;
+}
+.boxed-contained-btn{
+    margin: auto !important;
+    margin-top: 10px !important;
+}
+
+
+.about-paragraph{
+    font-size: 12px;
+}
+.counts-heading{
+    font-size: 17px;
+}
+.counts-paragraph{
+    font-size: 12px;
+}
+.discover-more-btn{
+    padding: 5px !important;
+}
+.chooose-btn{
+    margin: auto !important;
+    margin-bottom: 10px !important;
+}
+.choose-heading{
+    font-size: 20px !important;
+    text-align: center ;
+}
+.choose-paragraph{
+    font-size: 16px !important;
+    text-align: center;
+}
+.discover-btn{
+    margin: auto;
+    font-size: 12px;
+    margin-bottom: 10px !important;
+}
+.product-font h1{
+    font-size: 16px !important;
+    text-align: center !important;
+}
+.product-font p{
+    font-size: 13px !important;
+    text-align: center !important;
+}
+
+
+.customer-speech{
+    font-size: 16px !important;
+}
+.star-rating{
+    height: fit-content !important;
+    margin-bottom: 10px !important;
+}
+.article-heading{
+    font-size: 14px !important;
+}
+.bag-article1{
+margin-bottom: 80px !important;
+}
+.box2 {
+    margin-top: 100px;
+}
+.everyday-paragraph{
+    font-size: 12px !important;
+    text-align: center !important;
+}
+.about-heading{
+    font-size: 25px !important;
+    text-align: center !important;
+}
+.box-btn{
+    margin: auto !important;
+}
+
+}
+@media only screen and (max-width:992px) {
+    .box-btn{
+        margin: auto !important;
+    } 
+    .about-heading{
+      
+        text-align: center !important;
+    }
+    .everyday-paragraph{
+       
+        text-align: center !important;
+    }
+}
